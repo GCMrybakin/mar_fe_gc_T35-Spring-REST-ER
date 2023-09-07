@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.mrybakin.tarea35.Ejercicio1.dto.Articulos;
 import com.mrybakin.tarea35.Ejercicio1.dao.ArticulosRepository;
 
-public class ArticulosServiceImplementation implements IArticulosService {
+public class ArticulosServiceImplementation implements IDepartamentosService {
 	
 	@Autowired
 	ArticulosRepository ArticulosRepo;

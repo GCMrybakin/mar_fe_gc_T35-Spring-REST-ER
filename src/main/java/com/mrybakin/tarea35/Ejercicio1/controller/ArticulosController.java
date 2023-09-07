@@ -3,7 +3,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.mrybakin.tarea35.Ejercicio1.dto.Articulos;
-import com.mrybakin.tarea35.Ejercicio1.service.IArticulosService;
+import com.mrybakin.tarea35.Ejercicio1.service.IDepartamentosService;
 import com.mrybakin.tarea35.Ejercicio1.service.ArticulosServiceImplementation;
 
 @RestController
