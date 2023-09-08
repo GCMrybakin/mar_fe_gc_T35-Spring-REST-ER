@@ -3,11 +3,12 @@ package com.mrybakin.tarea35.Ejercicio3.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.mrybakin.tarea35.Ejercicio2.dao.DepartamentosRepository;
 import com.mrybakin.tarea35.Ejercicio3.dao.CajasRepository;
 import com.mrybakin.tarea35.Ejercicio3.dto.Cajas;
-
+@Service
 public class CajasServiceImplementation implements ICajasService {
 	
 	@Autowired

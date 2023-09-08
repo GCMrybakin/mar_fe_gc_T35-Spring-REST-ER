@@ -13,7 +13,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="Fabricantes") 
+@Table(name="fabricantes") 
 public class Fabricantes {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,7 +33,7 @@ public class Fabricantes {
 	}
 	
 	public String toString() {
-        return "Fabricantes id=" + id + ", nombre=" + nombre + ", Articulos=" + articulos + "";
+        return "Fabricantes id=" + id + ", nombre=" + nombre + ", Articulos=" + articulos;
     }
 
 	public int getId() {

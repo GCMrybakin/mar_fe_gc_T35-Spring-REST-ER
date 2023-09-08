@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.mrybakin.tarea35.Ejercicio2.dto.Departamentos;
 import com.mrybakin.tarea35.Ejercicio2.dao.DepartamentosRepository;
-
+@Service
 public abstract class DepartamentosServiceImplementation implements IDepartamentosService {
 	
 	@Autowired

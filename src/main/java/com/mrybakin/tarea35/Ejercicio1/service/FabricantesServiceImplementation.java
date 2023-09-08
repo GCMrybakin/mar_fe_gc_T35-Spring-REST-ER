@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.mrybakin.tarea35.Ejercicio1.dto.Fabricantes;
 import com.mrybakin.tarea35.Ejercicio1.dao.FabricantesRepository;
-
+@Service
 public class FabricantesServiceImplementation implements IFabricantesService {
 	
 	@Autowired

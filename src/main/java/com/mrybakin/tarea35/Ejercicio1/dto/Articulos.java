@@ -21,22 +21,23 @@ public class Articulos {
 
     @Column(name = "precio")
     private int precio;
+    
     @ManyToOne
-    @Column(name = "Fabricante")
-    private Fabricantes Fabricante;
+	@JoinColumn(name = "fabricante")
+    private Fabricantes fabricante;
     
     public Articulos() {}
 
-    public Articulos(Long id, String nombre, int precio, Fabricantes Fabricante) {
+    public Articulos(Long id, String nombre, int precio, Fabricantes fabricante) {
 		this.id = id;
 		this.nombre = nombre;
 		this.precio = precio;
-		this.Fabricante = Fabricante;
+		this.fabricante = fabricante;
 	}
 
 
     public String toString() {
-        return "Articulo id=" + id + ", nombre=" + nombre + ", precio=" + precio + ", Fabricante=" + Fabricante + "";
+        return "Articulo id =" + id + ", nombre =" + nombre + ", precio =" + precio + ", Fabricante =" + fabricante;
     }
 
 	public Long getId() {
@@ -64,10 +65,10 @@ public class Articulos {
 	}
 
 	public Fabricantes getFabricante() {
-		return Fabricante;
+		return fabricante;
 	}
 
 	public void setFabricante(Fabricantes fabricante) {
-		Fabricante = fabricante;
+		this.fabricante = fabricante;
 	}
 }

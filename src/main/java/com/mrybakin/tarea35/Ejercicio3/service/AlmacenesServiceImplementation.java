@@ -3,10 +3,12 @@ package com.mrybakin.tarea35.Ejercicio3.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.mrybakin.tarea35.Ejercicio3.dto.Almacenes;
 import com.mrybakin.tarea35.Ejercicio3.dao.AlmacenesRepository;
 import com.mrybakin.tarea35.Ejercicio3.service.IAlmacenesService;
-
+@Service
 public class AlmacenesServiceImplementation implements IAlmacenesService {
 	
 	@Autowired

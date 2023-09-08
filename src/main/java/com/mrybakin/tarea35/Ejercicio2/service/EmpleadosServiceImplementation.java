@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.mrybakin.tarea35.Ejercicio2.dto.Empleados;
 import com.mrybakin.tarea35.Ejercicio2.dao.EmpleadosRepository;
-
+@Service
 public abstract class EmpleadosServiceImplementation implements IEmpleadosService {
 	
 	@Autowired
